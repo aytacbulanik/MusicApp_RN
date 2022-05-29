@@ -2,10 +2,10 @@
 import React from 'react';
 import {View,Text} from 'react-native';
 
-function App() {
+const App = ({music}) => {
     return(
         <View>
-        <Text> Deneme </Text>
+        <Text> {music.title} </Text>
         </View>
     )
 };
