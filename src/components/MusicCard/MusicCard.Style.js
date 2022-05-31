@@ -27,11 +27,18 @@ export default StyleSheet.create({
     bottomTextView : {
         flex:2,
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
+    },
+    bottomLeftView: {
+        flexDirection: 'row',
+    },
+    bottomRightView: {
+
     },
     tukendi: {
         alignItems: 'center',
         justifyContent: 'flex-end',
+        color: 'red',
     },
     image : {
         width: Dimensions.get('screen').width /4,

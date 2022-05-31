@@ -12,12 +12,12 @@ const App = ({music}) =>  (<View style={cardStyle.container}>
             <Text style={cardStyle.artistText}> {music.artist} </Text>
         </View>
         <View style={cardStyle.bottomTextView}>
-            <View>
+            <View style={cardStyle.bottomLeftView}>
                 <Text> {music.album} </Text>
                 <Text style={cardStyle.artistText}> {music.year} </Text>
             </View>
             <View >
-                <Text style={cardStyle.tukendi}>Tükendi</Text>
+               {music.isSoldOut && <Text style={cardStyle.tukendi}>Tükendi</Text> }
             </View>
         </View>
     </View>
