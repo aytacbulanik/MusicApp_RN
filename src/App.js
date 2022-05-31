@@ -7,10 +7,12 @@ const App = () => {
   
   const musicArray = musicData;
   const renderMusicItem = ({item}) => <MusicCard  music={item} />;
+  
   return(
     <SafeAreaView>
      <Text> Müzik Listem</Text>
-     <FlatList 
+     <FlatList
+     keyExtractor={item => item.id}
      renderItem={renderMusicItem}
      data={musicArray}
      />

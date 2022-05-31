@@ -2,37 +2,20 @@ import {StyleSheet,Dimensions} from 'react-native';
 
 export default StyleSheet.create({
     container : {
-        flex: 1,
+        padding: 10,
         flexDirection: 'row',
     },
-    textContainer: {
-        flex:1,
-        margin: 3,
-        padding: 2,
-        borderWidth: 1,
+    inner_container: {
+        padding: 10,
     },
-    topTextView: {
-        flex: 2,
-        flexDirection: 'row',
-        alignItems: 'center',
+    title: {
+fontSize: 25,
+fontWeight: 'bold',
     },
-    topText: {
-        fontWeight: 'bold',
-        fontSize: 18,
-    },
-    artistText: {
-       
-        color: 'lightgray',
-    },
-    bottomTextView : {
-        flex:2,
-        flexDirection: 'row',
-        alignItems: 'center',
-    },
-    bottomLeftView: {
+    infoContainer: {
         flexDirection: 'row',
     },
-    bottomRightView: {
+    year: {
 
     },
     tukendi: {
@@ -41,7 +24,7 @@ export default StyleSheet.create({
         color: 'red',
     },
     image : {
-        width: Dimensions.get('screen').width /4,
+        width: 100,
         height:100,
         borderRadius: 50,
         margin: 3,
