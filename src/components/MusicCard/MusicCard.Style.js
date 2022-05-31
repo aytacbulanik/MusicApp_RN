@@ -3,7 +3,6 @@ import {StyleSheet,Dimensions} from 'react-native';
 export default StyleSheet.create({
     container : {
         flex: 1,
-        backgroundColor : 'lightgray',
         flexDirection: 'row',
     },
     textContainer: {
@@ -15,14 +14,24 @@ export default StyleSheet.create({
     topTextView: {
         flex: 2,
         flexDirection: 'row',
+        alignItems: 'center',
     },
     topText: {
         fontWeight: 'bold',
-        fontSize: 20,
+        fontSize: 18,
+    },
+    artistText: {
+       
+        color: 'lightgray',
     },
     bottomTextView : {
         flex:2,
         flexDirection: 'row',
+        alignItems: 'center'
+    },
+    tukendi: {
+        alignItems: 'center',
+        justifyContent: 'flex-end',
     },
     image : {
         width: Dimensions.get('screen').width /4,
