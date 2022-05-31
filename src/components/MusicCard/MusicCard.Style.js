@@ -6,7 +6,10 @@ export default StyleSheet.create({
         flexDirection: 'row',
     },
     inner_container: {
+        flex: 1,
         padding: 10,
+        backgroundColor: 'green',
+        justifyContent: 'center',
     },
     title: {
 fontSize: 25,
@@ -16,12 +19,14 @@ fontWeight: 'bold',
         flexDirection: 'row',
     },
     year: {
+        marginLeft: 5,
+        fontWeight: 'bold',
+    },
+    soldOut_container: {
 
     },
-    tukendi: {
-        alignItems: 'center',
-        justifyContent: 'flex-end',
-        color: 'red',
+    soldText : {
+
     },
     image : {
         width: 100,
