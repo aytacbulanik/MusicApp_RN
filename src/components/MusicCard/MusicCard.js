@@ -9,12 +9,16 @@ const App = ({music}) =>  {
                 source={{ uri: music.imageUrl }} />
             <View style={cardStyle.inner_container}>
                 <Text style={cardStyle.title} > {music.title} </Text>
+                    <View style={cardStyle.infoContent}>
                     <View style={cardStyle.infoContainer}>
-                        <Text> {music.album} </Text>
+                        <Text> {music.artist} </Text>
                         <Text style={cardStyle.artistText}> {music.year} </Text>
                     </View>
+
+                    {music.isSoldOut && 
                     <View style={cardStyle.soldOut_container}>
-                        {music.isSoldOut && <Text style={cardStyle.soldText}>Tükendi</Text>}
+                       <Text style={cardStyle.soldText}>Tükendi</Text>
+                    </View>}
                     </View>
                     </View>
                 </View>

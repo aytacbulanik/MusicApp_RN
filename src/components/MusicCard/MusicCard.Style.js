@@ -16,6 +16,11 @@ fontSize: 25,
 fontWeight: 'bold',
     },
     infoContainer: {
+        flex: 1,
+        flexDirection: 'row',
+        backgroundColor: 'black',
+    },
+    infoContent: {
         flexDirection: 'row',
     },
     year: {
@@ -23,10 +28,13 @@ fontWeight: 'bold',
         fontWeight: 'bold',
     },
     soldOut_container: {
-
+        borderWidth: 1,
+        borderColor: 'red',
+        padding: 5,
+        borderRadius: 5,
     },
     soldText : {
-
+        color: 'red',
     },
     image : {
         width: 100,
