@@ -1,3 +1,4 @@
+
 import React from 'react';
 import {View,Text, Image} from 'react-native';
 import cardStyle from './MusicCard.Style';
@@ -14,7 +15,6 @@ const App = ({music}) =>  {
                         <Text> {music.artist} </Text>
                         <Text style={cardStyle.artistText}> {music.year} </Text>
                     </View>
-
                     {music.isSoldOut && 
                     <View style={cardStyle.soldOut_container}>
                        <Text style={cardStyle.soldText}>Tükendi</Text>

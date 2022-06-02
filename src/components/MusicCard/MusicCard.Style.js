@@ -8,7 +8,6 @@ export default StyleSheet.create({
     inner_container: {
         flex: 1,
         padding: 10,
-        backgroundColor: 'green',
         justifyContent: 'center',
     },
     title: {
@@ -18,7 +17,8 @@ fontWeight: 'bold',
     infoContainer: {
         flex: 1,
         flexDirection: 'row',
-        backgroundColor: 'black',
+        paddingTop: 10,
+        alignItems: 'center',
     },
     infoContent: {
         flexDirection: 'row',
@@ -41,6 +41,9 @@ fontWeight: 'bold',
         height:100,
         borderRadius: 50,
         margin: 3,
+    },
+    artistText: {
+        color: 'lightgray',
     },
 
 })
