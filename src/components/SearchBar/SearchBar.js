@@ -1,13 +1,14 @@
-import react from 'react';
+import React from 'react';
 import {View,TextInput} from 'react-native';
-import styles from './SearchBar.Style';
+import searchStyle from './SearchBar.Style';
 
 const searchBar = () => {
     return(
-        <View>
-            <TextInput style={searchStyle.container}/>
+        <View style={searchStyle.viewContainer}>
+            <TextInput 
+            placeholder='Şarkı İsmi Giriniz...'
+            style={searchStyle.container}/>
         </View>
-    )
-};
+    )};
 
 export default searchBar;
