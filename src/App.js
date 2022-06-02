@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, FlatList,Text} from 'react-native';
+import {SafeAreaView, FlatList,Text,TextInput} from 'react-native';
 import MusicCard from './components/MusicCard';
 import musicData from './music-data.json';
 
@@ -11,6 +11,7 @@ const App = () => {
   return(
     <SafeAreaView>
      <Text> Müzik Listem</Text>
+    
      <FlatList
      keyExtractor={item => item.id}
      renderItem={renderMusicItem}
