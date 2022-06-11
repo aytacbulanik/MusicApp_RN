@@ -6,7 +6,6 @@ import SearchBar from './components/SearchBar';
 
 const App = () => {
   const [list,setList] = useState(musicData);
-  const musicArray = musicData;
   const renderMusicItem = ({item}) => <MusicCard  music={item} />;
   const handleSearch = text => {
     const  filtredList  = musicData.filter( song => {
